@@ -11,6 +11,16 @@ body {
     line-height: 1.6;
 }
 
+img{
+    width: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+}
+
+/* == header == */
 
 header {
     background-color: oklch(25.7% 0.09 281.288);
@@ -36,28 +46,25 @@ header {
     border-radius: 4px;
 }
 
-
 .menu {
     margin-top: 10px;
 }
-
 .menu ul {
     display: flex;
     gap: 20px;
     list-style: none;
 }
-
 .menu a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
 .menu a:hover {
     color: #333;
 }
 
+/* == main == */
 
 main {
     max-width: 1000px;
@@ -72,13 +79,11 @@ main {
     width: 500px;
 }
 
-
 .conteudoprincipal {
     display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
-
 
 .informacoes img {
     width: 100%;
@@ -90,8 +95,6 @@ main {
 .preco {
     color: oklch(62.3% 0.214 259.815);
 }
-
-
 .preco button {
     padding: 12px 25px;
     background-color: #3483fa;
@@ -100,19 +103,18 @@ main {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    width: 150px;
+    height: 45px;
 }
-
 .preco button:hover {
     background-color: #2968c8;
 }
-
 
 .informacoesuteis ul {
     list-style: disc;
     padding-left: 20px;
     margin-top: 20px;
 }
-
 
 .maisdetalhes {
     margin-top: 30px;
@@ -133,12 +135,14 @@ main {
     width: 150px;
 }
 
+/* == footer == */
 
 footer {
     background-color: #333;
     color: #fff;
     padding: 30px 20px;
     margin-top: 40px;
+    text-align: center;
 }
 
 footer h2 {
@@ -157,12 +161,12 @@ footer ul li {
 
 footer .botaotopo {
     display: inline-block;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 39, 39);
+    padding: 10px 60px;
     border-radius: 4px;
     margin-bottom: 20px;
-    align-items: center;
 }
 
 
@@ -173,17 +177,8 @@ footer p {
     color: #aaa;
 }
 
-img{
-    width: 400px;
-    height: 400px;
-}
-
-.produto {
-    margin-bottom: 20px;
-}
-
-.informacoesadicionais {
+.containerinformacoes {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 200px;
+    justify-content: center;
 }
